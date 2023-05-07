@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .box-inf {
+        max-width: 270px;
+    }
+}

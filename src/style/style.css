@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;700&family=Orienta&display=swap');
+@import url(reset.css);
+
+html,
+body {
+  height: 100%;
+  background-color: #0F0E17;
+}
+
+body::-webkit-scrollbar,
+.scroll::-webkit-scrollbar {
+    width: 8px; /* ширина полосы прокрутки */
+}
+  
+body::-webkit-scrollbar-thumb,
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #6c757d; /* цвет полосы прокрутки */
+    border-radius: 10px; /* скругление углов полосы прокрутки */
+}
+
+body::-webkit-scrollbar-track,
+.scroll::-webkit-scrollbar-track {
+    background-color: #2D2C31; /* цвет фона трека прокрутки */
+    border-radius: 5px;
+}
+
+:root {
+    --square_box-vhpx: 200px;
+    --container-width: 1270px;
+    --container-padding: 30px;
+    --open-bold: 700;
+    --open-regular: 400;
+    --mon-bold: 700;
+    --orienta-regular: 400;
+    --promt-regular: 400;
+}
+
+.title-creacted-by {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 20px;
+}
+
+.title-logo__app {
+    padding: 30px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 24px;
+}
+
+.git_logo-app {
+    color: rgb(228, 127, 69);
+}
+
+section {
+    background-color: #0F0E17;
+}
+
+.container {
+    max-width: var(--container-width);
+    padding: var(--container-padding);
+    margin: 0 auto;
+}
+.wrap_reg {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap_reg-git {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title-inf__reg {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 18px;
+}
+
+.wrap_user {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg {
+    max-width: 400px;
+    background-color: #2D2C31;
+    display: flex;
+    border-radius: 15px;
+    padding: 15px;
+    column-gap: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.img__logo-reg__github {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.title-reg__github {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 24px;
+}
+
+.container__inpt-reg__inf {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 500px;
+}
+
+.inpt__reg-inf {
+    background-color: #545456;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 18px;
+}
+
+.button__inpt-reg__create {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.70);
+    height: 50px;
+    border-radius: 10px;
+    
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 18px;
+}
+
+.button__inpt-reg__create:hover {
+    transition: 0.4s ease;
+    background-color: rgba(255, 255, 255);
+}
+
+.square-box__reg {
+    background-color: #2D2C31;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100%;
+}
+
+.title-inf__user {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    overflow-wrap: break-word;
+}
+
+.title-inf {
+    color: rgb(228, 127, 69);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.user-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.img-logo {
+    border-radius: 10px;
+}
+
+.box-inf {
+    max-width: 500px;
+    padding: 15px;
+    border: 3px solid #0F0E17;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.title-map__works-user {
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.title-works {
+    color: rgb(228, 127, 69);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.wrap-user-works {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 600px;
+    max-height: 830px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.box-li__user-works {
+    background-color: #0F0E17;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 100%;
+    flex-grow: 1;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inf-map__work-user {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+    color: #fff;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 15px;
+}
+
+.inf__ {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+}
+
+.line-inf {
+    width: 100%;
+    height: 2px;
+    background-color: #2D2C31;
+    margin-top: 5px;
+}
+
+.flex-wrap__user-inf {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    gap: 20px;
+}
+
+.error__message {
+    color: rgb(226, 80, 80);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: var(--open-bold);
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+  }
+  @keyframes lds-ripple {
+    0% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    4.9% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    5% {
+      top: 36px;
+      left: 36px;
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+      width: 72px;
+      height: 72px;
+      opacity: 0;
+    }
+  }
+  
